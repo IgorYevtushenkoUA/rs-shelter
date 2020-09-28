@@ -521,7 +521,7 @@ $color-dark-s: #CDCDCD;
     }
 
     .card-footer-1 {
-      @include size (252px,32px);
+      @include size(252px, 32px);
       display: flex;
       padding-top: 5px;
 
@@ -540,8 +540,9 @@ $color-dark-s: #CDCDCD;
       }
 
     }
+
     .card-footer-2 {
-      @include size (245px,32px);
+      @include size(245px, 32px);
       display: flex;
       //margin-top: 25px;
       padding-top: 37px;
@@ -573,7 +574,7 @@ $color-dark-s: #CDCDCD;
     }
 
     .card-footer-3 {
-      @include size (310px,46px);
+      @include size(310px, 46px);
       display: flex;
       //margin-left: -5px;
       p {
@@ -590,10 +591,12 @@ $color-dark-s: #CDCDCD;
         color: #F1CDB3;
       }
     }
+
     .card-footer-4 {
-      @include size (310px,32px);
+      @include size(310px, 32px);
       display: flex;
       margin-top: 30px;
+
       p {
         padding-top: 10px;
         width: 260px;
@@ -612,7 +615,8 @@ $color-dark-s: #CDCDCD;
   }
 
   .img-footer-puppy {
-    //  border: 1px solid aqua;
+    margin-top: 13px;
+    margin-left: -2px;
   }
 
 }
