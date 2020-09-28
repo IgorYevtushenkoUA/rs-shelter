@@ -15,23 +15,23 @@ $color-dark-s: #CDCDCD;
 
 .header {
   @include size(1920px, 908px);
-  //background-image: url("../../../img/start-screen-gradient-background.png");
-  background-color: green;
+  background-image: url("../../../img/start-screen-gradient-background.png");
 
   .container-header {
-    background-color: #513D2F;
     display: flex;
-    flex-direction: column;
+    //display: inline-block;
+    //flex-direction: column;
 
-    margin: -2px 360px 80px 360px;
-
+    margin: 0px 360px 80px 360px;
+    //border: 5px solid deeppink;
     .header-logo {
       @include size(184px, 60px);
 
       display: block;
       height: 53px;
       position: relative;
-      top: 53px;
+      padding-top: 60px;
+      //top: 53px;
 
       h1 {
         @include size(186px, 35px);
@@ -63,14 +63,14 @@ $color-dark-s: #CDCDCD;
       }
     }
 
-
     .header-nav-menu {
-
-      display: flex;
-      justify-content: flex-end;
+      //@include size(443px, 27px);
+      margin-right: 0px;
+      //border: 2px solid #f1cdb3;
       position: relative;
-      //top: -1px;
-      right: 3px;
+      padding-top: 60px;
+      padding-left: 498px;
+      //right: 3px;
 
       ul {
         display: flex;
@@ -98,6 +98,7 @@ $color-dark-s: #CDCDCD;
       }
 
       .li-underline a {
+        border-bottom: 2px solid #FAFAFA;
         color: #FAFAFA;
       }
 
@@ -109,7 +110,6 @@ $color-dark-s: #CDCDCD;
     display: grid;
     grid-template-columns: 3fr 4fr;
     grid-gap: 42px;
-    background-color: #545454;
 
     .info-header {
       margin-top: 168px;
@@ -136,7 +136,7 @@ $color-dark-s: #CDCDCD;
         line-height: 160%;
         align-items: center;
         color: #CDCDCD;
-        padding-top: 6px;
+        padding-top: 4px;
       }
 
       button {
@@ -158,6 +158,7 @@ $color-dark-s: #CDCDCD;
     .img-start-screen-puppy {
       //margin-top: 39px;
       //margin-left: -2px;
+      padding-top: 39px;
 
       img {
         @include size(698px, 728px);
@@ -169,13 +170,10 @@ $color-dark-s: #CDCDCD;
 //----Not only---------------------------------------
 .block-not-only {
   @include size(1920px, 588px);
-  background-color: deeppink;
 
   .container-not-only {
     background-color: #f1cdb3;
-    //margin: 0px 360px 100px 360px + 175px;
-    //margin: 74px 360px 100px 360px + 175px;
-padding: 74px 360px 100px 360px + 175px;
+    padding: 80px 360px 100px 360px + 175px;
     display: grid;
     grid-gap: 120px;
     grid-template-columns: 300px 430px;
@@ -220,16 +218,17 @@ padding: 74px 360px 100px 360px + 175px;
   @include size(1920px, 877px);
 
   .container-about {
-    @include size(1200px, 697px);
-    padding: 80px 360px 100px 360px;
-    //border: 10px solid blue;
+    padding-top: 60px;
+    //@include size(1200px, 697px);
+    width: 1200px;
+    //height: 697px;
+    margin-left: 360px;
+    margin-right: 360px;
 
     .header-about {
       @include size(400px, 90px);
-      //border: 1px solid brown;
-      //todo неправильно розташовани текст
+
       h3 {
-        border: 5px solid #4C4C4C;
         font-family: Georgia;
         font-style: normal;
         font-weight: normal;
@@ -240,20 +239,17 @@ padding: 74px 360px 100px 360px + 175px;
       }
     }
 
-
     .main-about {
       display: grid;
       grid-template-columns: 1fr 6fr 1fr;
       grid-gap: 53px;
-      //border: 5px solid crimson;
-      @include size(990px, 435px);
-
+      //@include size(990px, 435px);
 
       .arrow-left button,
       .arrow-right button {
         width: 52px;
         height: 52px;
-        margin-top: 188px;
+        margin-top: 238px;
         //border: 2px solid #F1CDB3;
         box-sizing: border-box;
         border-radius: 100px;
@@ -271,11 +267,14 @@ padding: 74px 360px 100px 360px + 175px;
         display: grid;
         grid-gap: 90px;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 45px;
+
         //border: 1px solid darkorange;
 
         .info-card-about {
           //border: 5px solid blue;
           @include size(270px, 425px);
+          background: #FAFAFA;
 
           img {
             margin: 30px 35px 30px 35px;
@@ -298,7 +297,7 @@ padding: 74px 360px 100px 360px + 175px;
             order: 1;
             align-self: center;
             flex-grow: 0;
-            margin: 0px 30px;
+            margin: -4px 30px;
           }
 
           button {
@@ -307,28 +306,32 @@ padding: 74px 360px 100px 360px + 175px;
             width: 187px;
             height: 52px;
             align-self: center;
-            flex-grow: 0;
-            margin: 30px 41.5px;
+            margin: 34px 41.5px;
             font-family: Georgia;
             font-style: normal;
             font-weight: normal;
             font-size: 17px;
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            color: #292929;
+            align-self: center;
+            letter-spacing: 0.06em;
           }
         }
       }
     }
 
     .btn-about {
-      margin: 0 auto;
-      //border: 5px solid darkgreen;
+      margin: 70px auto 0 auto;
       text-align: center;
 
       button {
-        background: #F1CDB3;
-        border-radius: 100px;
         font-family: Georgia;
         font-style: normal;
         font-weight: normal;
+        background: #F1CDB3;
+        border: none;
+        border-radius: 100px;
         font-size: 17px;
         line-height: 130%;
         letter-spacing: 0.06em;
@@ -344,9 +347,13 @@ padding: 74px 360px 100px 360px + 175px;
 
 .block-help {
   @include size(1920px, 611px);
-  background-color: #f1cdb3;
+  background-color: powderblue;
 
   .container-help {
+    padding-top: 80px;
+    margin-left: 360px;
+    margin-right: 360px;
+
     @include size(1026px, 435px);
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -393,25 +400,94 @@ padding: 74px 360px 100px 360px + 175px;
   @include size(1920px, 464px);
   background-color: darkcyan;
 
-
   .container-in-addition {
+    @include size(1200px, 284px);
+
+    background-color: chartreuse;
+    padding-top: 91px;
+    margin-left: 360px;
+    margin-right: 360px;
     display: flex;
-    // 1px solid brown;
 
     .img-donation-dog {
-      //border: 1px solid blue;
-
+      padding-left: 141px;
     }
 
     .info-in-addition {
-      //  border: 1px solid darkcyan;
+      margin-left: 30px;
+      margin-top: -10px;
+      //border: 2px solid #513D2F;
+      h3 {
+        margin-top: 0px;
+        width: 300px;
+        height: 90px;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+      }
+
+      .text-in-addition-2 {
+        margin-top: -14px;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 20px;
+      }
 
       .card-in-addition {
-        //    border: 1px solid deeppink;
-
         display: flex;
+        width: 349px;
+        height: 43px;
+        background: #F1CDB3;
+        border-radius: 9px;
+
+        img {
+          padding: 10px 0px 0px 15px;
+          height: 23px;
+          width: 30px;
+        }
+
+        h4 {
+
+          font-family: Georgia;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 115%;
+          align-items: center;
+          letter-spacing: 0.06em;
+          color: #545454;
+          margin-top: 10px;
+          margin-left: 15px;
+        }
 
       }
+
+      .text-in-addition-3 {
+        width: 380px;
+        height: 72px;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #B2B2B2;
+        padding-top: 8px;
+        //margin-top: 19px;
+      }
+
     }
   }
 }
@@ -423,21 +499,115 @@ padding: 74px 360px 100px 360px + 175px;
 }
 
 .container-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 279px 302px 300px;
+  grid-gap: 160px;
+  margin-left: 360px;
+  margin-right: 360px;
+  padding-top: 26px;
+  //padding-left: 5px;
 
   .info-block-left {
-    // border: 1px solid deeppink;
+    h3 {
+      @include size(279px, 90px);
+      font-family: Georgia;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
 
-    .card-footer {
+    }
+
+    .card-footer-1 {
+      @include size (252px,32px);
       display: flex;
+      padding-top: 5px;
+
+      p {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+
+        margin-top: 5px;
+        margin-left: 18px;
+
+      }
+
+    }
+    .card-footer-2 {
+      @include size (245px,32px);
+      display: flex;
+      //margin-top: 25px;
+      padding-top: 37px;
+
+      p {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+        margin-top: 5px;
+        margin-left: 18px;
+      }
     }
   }
 
   .info-block-center {
-    //  border: 1px solid green;
+    h3 {
+      @include size(270px, 90px);
+      font-family: Georgia;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+    }
 
-    .card-footer {
+    .card-footer-3 {
+      @include size (310px,46px);
       display: flex;
+      //margin-left: -5px;
+      p {
+        padding-left: 20px;
+        margin-top: -3px;
+        width: 260px;
+        height: 46px;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+      }
+    }
+    .card-footer-4 {
+      @include size (310px,32px);
+      display: flex;
+      margin-top: 30px;
+      p {
+        padding-top: 10px;
+        width: 260px;
+        height: 23px;
+        margin-left: 15px;
+        margin-top: -5px;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+      }
     }
   }
 
