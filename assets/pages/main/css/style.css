@@ -1,28 +1,28 @@
-body {
-  width: 1920px;
+.header {
   width: 1920px;
   height: 908px;
+  background-color: green;
 }
-
-.header {
-  background-image: url("../../../img/start-screen-gradient-background.png");
-}
-
-.container-header {
+.header .container-header {
+  background-color: #513D2F;
   display: flex;
-  margin: -7px 360px 80px 350px;
-  border: 5px solid deeppink;
+  flex-direction: column;
+  margin: -2px 360px 80px 360px;
 }
-.container-header .header-logo {
-  border: 3px solid antiquewhite;
+.header .container-header .header-logo {
+  width: 184px;
+  height: 60px;
+  display: block;
   height: 53px;
   position: relative;
   top: 53px;
 }
-.container-header .header-logo h1 {
+.header .container-header .header-logo h1 {
+  width: 186px;
+  height: 35px;
   margin-top: 0;
   position: relative;
-  font-family: "Georgia";
+  font-family: Georgia;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -30,7 +30,9 @@ body {
   letter-spacing: 0.06em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.container-header .header-logo p {
+.header .container-header .header-logo p {
+  width: 180px;
+  height: 15px;
   margin-top: -12px;
   margin-left: 4px;
   position: relative;
@@ -44,20 +46,20 @@ body {
   letter-spacing: 0.1em;
   color: #FFFFFF;
 }
-.container-header .header-nav-menu {
+.header .container-header .header-nav-menu {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
-  top: 53px;
-  margin-left: 491px;
+  right: 3px;
 }
-.container-header .header-nav-menu ul {
+.header .container-header .header-nav-menu ul {
   display: flex;
   list-style: none;
-  border: 1px solid aqua;
 }
-.container-header .header-nav-menu ul li {
+.header .container-header .header-nav-menu ul li {
   padding-left: 35px;
 }
-.container-header .header-nav-menu ul li a {
+.header .container-header .header-nav-menu ul li a {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -70,22 +72,22 @@ body {
   outline: none;
   text-decoration: none;
 }
-.container-header .header-nav-menu .li-underline a {
+.header .container-header .header-nav-menu .li-underline a {
   color: #FAFAFA;
-  border-bottom: 2px solid #F1CDB3;
 }
-
-.container-header-main {
-  margin: 4px 360px 0 354px;
+.header .container-header-main {
+  margin: -55px 360px 0 360px;
   display: grid;
   grid-template-columns: 3fr 4fr;
   grid-gap: 42px;
+  background-color: #545454;
 }
-.container-header-main .info-header {
-  border: 5px solid gold;
-  margin-top: 150px;
+.header .container-header-main .info-header {
+  margin-top: 168px;
+  width: 460px;
+  height: 321px;
 }
-.container-header-main .info-header h2 {
+.header .container-header-main .info-header h2 {
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -97,8 +99,7 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
-.container-header-main .info-header p {
-  border: 1px solid #CDCDCD;
+.header .container-header-main .info-header p {
   width: 460px;
   height: 72px;
   font-family: Arial;
@@ -110,7 +111,7 @@ body {
   color: #CDCDCD;
   padding-top: 6px;
 }
-.container-header-main .info-header button {
+.header .container-header-main .info-header button {
   background: #F1CDB3;
   border-radius: 100px;
   width: 207px;
@@ -124,32 +125,26 @@ body {
   line-height: 130%;
   letter-spacing: 0.06em;
 }
-.container-header-main .img-start-screen-puppy {
-  border: 1px solid aqua;
-  margin-top: 28px;
-  margin-left: -10px;
-}
-.container-header-main .img-start-screen-puppy img {
+.header .container-header-main .img-start-screen-puppy img {
   width: 698px;
   height: 728px;
 }
 
-.container-not-only {
-  margin: 80px 360px 100px 535px;
+.block-not-only {
+  width: 1920px;
+  height: 588px;
+  background-color: deeppink;
+}
+.block-not-only .container-not-only {
+  background-color: #f1cdb3;
+  padding: 74px 360px 100px 535px;
   display: grid;
   grid-gap: 120px;
   grid-template-columns: 300px 430px;
 }
-.container-not-only .img-about-pet {
-  border: 1px solid black;
-}
-.container-not-only .info-not-only {
-  border: 1px solid blueviolet;
-}
-.container-not-only .info-not-only h3 {
+.block-not-only .container-not-only .info-not-only h3 {
   margin-top: 14px;
   margin-bottom: 0px;
-  border: 2px solid deeppink;
   width: 370px;
   height: 90px;
   font-family: Georgia;
@@ -160,9 +155,8 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.container-not-only .info-not-only p {
-  border: 2px solid deeppink;
-  margin-top: 20px;
+.block-not-only .container-not-only .info-not-only p {
+  margin-top: 25px;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -170,20 +164,25 @@ body {
   line-height: 160%;
   color: #4C4C4C;
 }
+.block-not-only .container-not-only .info-not-only p .text-2 {
+  margin-top: 20px;
+}
 
-.container-about {
+.block-about {
+  background-color: #F6F6F6;
   width: 1920px;
   height: 877px;
 }
-.container-about .header-about {
-  margin: 80px 760px 0px 760px;
+.block-about .container-about {
+  width: 1200px;
+  height: 697px;
+  padding: 80px 360px 100px 360px;
+}
+.block-about .container-about .header-about {
   width: 400px;
   height: 90px;
-  border: 1px solid brown;
 }
-.container-about .header-about h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.block-about .container-about .header-about h3 {
   border: 5px solid #4C4C4C;
   font-family: Georgia;
   font-style: normal;
@@ -193,37 +192,42 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.container-about .main-about {
+.block-about .container-about .main-about {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   grid-gap: 53px;
-  border: 1px solid crimson;
-  margin: 60px 360px 0px 360px;
-  width: 1200px;
-  height: 697px;
+  width: 990px;
+  height: 435px;
 }
-.container-about .main-about .arrow-left,
-.container-about .main-about .arrow-right {
+.block-about .container-about .main-about .arrow-left button,
+.block-about .container-about .main-about .arrow-right button {
   width: 52px;
+  height: 52px;
+  margin-top: 188px;
+  box-sizing: border-box;
+  border-radius: 100px;
 }
-.container-about .main-about .cards-about {
+.block-about .container-about .main-about .arrow-left button {
+  cursor: pointer;
+}
+.block-about .container-about .main-about .arrow-right button {
+  cursor: pointer;
+}
+.block-about .container-about .main-about .cards-about {
   display: grid;
   grid-gap: 90px;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid darkorange;
 }
-.container-about .main-about .cards-about .info-card-about {
-  border: 5px solid blue;
+.block-about .container-about .main-about .cards-about .info-card-about {
   width: 270px;
   height: 425px;
 }
-.container-about .main-about .cards-about .info-card-about img {
+.block-about .container-about .main-about .cards-about .info-card-about img {
   margin: 30px 35px 30px 35px;
-  border: 5px solid deeppink;
   width: 200px;
   height: 240px;
 }
-.container-about .main-about .cards-about .info-card-about p {
+.block-about .container-about .main-about .cards-about .info-card-about p {
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -239,8 +243,7 @@ body {
   flex-grow: 0;
   margin: 0px 30px;
 }
-.container-about .main-about .cards-about .info-card-about button {
-  border: 3px solid darkorange;
+.block-about .container-about .main-about .cards-about .info-card-about button {
   width: 187px;
   height: 52px;
   align-self: center;
@@ -251,54 +254,88 @@ body {
   font-weight: normal;
   font-size: 17px;
 }
-.container-about .btn-about {
-  border: 1px solid darkgreen;
+.block-about .container-about .btn-about {
+  margin: 0 auto;
+  text-align: center;
+}
+.block-about .container-about .btn-about button {
+  background: #F1CDB3;
+  border-radius: 100px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  padding: 15px 45px 15px 45px;
 }
 
-.container-help .header-help {
-  border: 1px solid blue;
+.block-help {
+  width: 1920px;
+  height: 611px;
+  background-color: #f1cdb3;
 }
-.container-help .cards-list-1 {
-  display: flex;
-  border: 1px solid darkgreen;
+.block-help .container-help {
+  width: 1026px;
+  height: 435px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
 }
-.container-help .cards-list-2 {
-  display: flex;
-  border: 1px solid crimson;
+.block-help .container-help .header-help {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  width: 308px;
+  height: 90px;
+}
+.block-help .container-help .cards-help {
+  width: 1026px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 10px solid #292929;
+}
+.block-help .container-help .cards-help .cards-list-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.block-help .container-help .cards-help .cards-list-2 {
+  display: grid;
+  grid-gap: 120px;
+  margin-left: 94px;
+  margin-right: 94px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.container-in-addition {
+.block-in-addition {
+  width: 1920px;
+  height: 464px;
+  background-color: darkcyan;
+}
+.block-in-addition .container-in-addition {
   display: flex;
-  border: 1px solid brown;
 }
-.container-in-addition .img-donation-dog {
-  border: 1px solid blue;
-}
-.container-in-addition .info-in-addition {
-  border: 1px solid darkcyan;
-}
-.container-in-addition .info-in-addition .card-in-addition {
-  border: 1px solid deeppink;
+.block-in-addition .container-in-addition .info-in-addition .card-in-addition {
   display: flex;
+}
+
+.footer {
+  width: 1920px;
+  height: 355px;
+  background: url("./../../../img/footer-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .container-footer {
   display: flex;
 }
-.container-footer .info-block-left {
-  border: 1px solid deeppink;
-}
 .container-footer .info-block-left .card-footer {
   display: flex;
 }
-.container-footer .info-block-center {
-  border: 1px solid green;
-}
 .container-footer .info-block-center .card-footer {
   display: flex;
-}
-.container-footer .img-footer-puppy {
-  border: 1px solid aqua;
 }
 
 /*# sourceMappingURL=style.css.map */
