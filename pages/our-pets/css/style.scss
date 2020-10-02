@@ -281,26 +281,99 @@
       @include size(300px, 310px);
       padding-top: 18px;
     }
-
-
   }
-
-
 }
-
 
 //768
 @media screen and (max-width: 768px) {
-  h1 {
-    background-color: #f1cdb3;
-  }
-  .header {
 
+
+  .header {
+    @include size(768px, 120px);
+    background-color: blueviolet;
+
+    .block-header {
+      @include size(708px, 60px);
+      margin-left: 30px;
+
+      .header-logo {
+        p {
+          padding-top: 1px;
+        }
+      }
+
+    }
   }
   .main {
+    @include size(768px, 1733px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+    .block-main {
+      margin-top: -10px;
+      @include size(580px, 1365px);
+
+      .card-pets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -20px;
+
+        .card-pet-3,
+        .card-pet-4 {
+          margin-top: -11px;
+        }
+
+        .card-pet-7,
+        .card-pet-8 {
+          display: none;
+        }
+      }
+
+      .card-pets-list2 {
+        margin-top: -30px;
+      }
+
+      .block-arrows {
+        .arrowsBtn {
+          margin: 40px auto;
+        }
+      }
+    }
   }
   .footer {
+    @include size(768px, 639px);
+    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-768.png");
+
+    .block-footer {
+      @include size(708px, 609px);
+      dispay: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 120px;
+
+      .footer-info-left {
+        margin-left: 25px;
+        margin-top: -26px;
+      }
+      .footer-info-center {
+        margin-left: -255px;
+        margin-top: -25px;
+        .card-pin-1 {
+          padding-top: -4px;
+
+          h4 {
+            padding-left: 19px;
+            margin-top: 25px;
+          }
+        }
+      }
+      .footer-info-right {
+        margin-top: -100px;
+        padding-left: 195px;
+        @include size (300px,315px);
+
+      }
+    }
 
   }
 

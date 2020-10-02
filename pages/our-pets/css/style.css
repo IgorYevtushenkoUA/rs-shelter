@@ -251,8 +251,84 @@
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    background-color: #f1cdb3;
+  .header {
+    width: 768px;
+    height: 120px;
+    background-color: blueviolet;
+  }
+  .header .block-header {
+    width: 708px;
+    height: 60px;
+    margin-left: 30px;
+  }
+  .header .block-header .header-logo p {
+    padding-top: 1px;
+  }
+
+  .main {
+    width: 768px;
+    height: 1733px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main .block-main {
+    margin-top: -10px;
+    width: 580px;
+    height: 1365px;
+  }
+  .main .block-main .card-pets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -20px;
+  }
+  .main .block-main .card-pets .card-pet-3,
+.main .block-main .card-pets .card-pet-4 {
+    margin-top: -11px;
+  }
+  .main .block-main .card-pets .card-pet-7,
+.main .block-main .card-pets .card-pet-8 {
+    display: none;
+  }
+  .main .block-main .card-pets-list2 {
+    margin-top: -30px;
+  }
+  .main .block-main .block-arrows .arrowsBtn {
+    margin: 40px auto;
+  }
+
+  .footer {
+    width: 768px;
+    height: 639px;
+    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-768.png");
+  }
+  .footer .block-footer {
+    width: 708px;
+    height: 609px;
+    dispay: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 120px;
+  }
+  .footer .block-footer .footer-info-left {
+    margin-left: 25px;
+    margin-top: -26px;
+  }
+  .footer .block-footer .footer-info-center {
+    margin-left: -255px;
+    margin-top: -25px;
+  }
+  .footer .block-footer .footer-info-center .card-pin-1 {
+    padding-top: -4px;
+  }
+  .footer .block-footer .footer-info-center .card-pin-1 h4 {
+    padding-left: 19px;
+    margin-top: 25px;
+  }
+  .footer .block-footer .footer-info-right {
+    margin-top: -100px;
+    padding-left: 195px;
+    width: 300px;
+    height: 315px;
   }
 }
 @media screen and (max-width: 320px) {
