@@ -76,6 +76,10 @@
         }
       }
     }
+
+    .header-navbar-logo {
+      display: none;
+    }
   }
 }
 
@@ -285,113 +289,241 @@
 }
 
 //768
+//@media screen and (max-width: 768px) {
+//  .header {
+//    @include size(768px, 120px);
+//    background-color: blueviolet;
+//
+//    .block-header {
+//      @include size(708px, 60px);
+//      margin-left: 30px;
+//
+//      .header-logo {
+//        p {
+//          padding-top: 1px;
+//        }
+//      }
+//      .header-navbar-logo {
+//          display:none;
+//      }
+//
+//    }
+//  }
+//  .main {
+//    @include size(768px, 1733px);
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//
+//    .block-main {
+//      margin-top: -10px;
+//      @include size(580px, 1365px);
+//
+//      .card-pets {
+//        display: grid;
+//        grid-template-columns: 1fr 1fr;
+//        margin-top: -20px;
+//
+//        .card-pet-3,
+//        .card-pet-4 {
+//          margin-top: -11px;
+//        }
+//
+//        .card-pet-7,
+//        .card-pet-8 {
+//          display: none;
+//        }
+//      }
+//
+//      .card-pets-list2 {
+//        margin-top: -30px;
+//      }
+//
+//      .block-arrows {
+//        .arrowsBtn {
+//          margin: 40px auto;
+//        }
+//      }
+//    }
+//  }
+//  .footer {
+//    @include size(768px, 639px);
+//    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-768.png");
+//
+//    .block-footer {
+//      @include size(708px, 609px);
+//      dispay: grid;
+//      grid-template-columns: repeat(2, 1fr);
+//      grid-gap: 120px;
+//
+//      .footer-info-left {
+//        margin-left: 25px;
+//        margin-top: -26px;
+//      }
+//      .footer-info-center {
+//        margin-left: -255px;
+//        margin-top: -25px;
+//        .card-pin-1 {
+//          padding-top: -4px;
+//
+//          h4 {
+//            padding-left: 19px;
+//            margin-top: 25px;
+//          }
+//        }
+//      }
+//      .footer-info-right {
+//        margin-top: -100px;
+//        padding-left: 195px;
+//        @include size (300px,315px);
+//
+//      }
+//    }
+//
+//  }
+//}
+
+//320
 @media screen and (max-width: 768px) {
 
-
   .header {
-    @include size(768px, 120px);
-    background-color: blueviolet;
+    @include size(320px, 120px);
 
     .block-header {
-      @include size(708px, 60px);
-      margin-left: 30px;
+      @include size(300px, 60px);
+      padding-top: 30px;
+      margin-left: 10px;
+      display: flex;
 
       .header-logo {
-        p {
-          padding-top: 1px;
+      }
+
+      .header-navbar {
+        display: none;
+      }
+
+      .header-navbar-logo {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 22px;
+        padding-top: 20px;
+        padding-left: 40px;
+
+        .line-1,
+        .line-2,
+        .line-3 {
+          border-bottom: 2px solid #000000;
+        }
+
+        .line-2,
+        .line-3 {
+          padding-top: 8px;
         }
       }
 
     }
+
   }
   .main {
-    @include size(768px, 1733px);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include size(320px, 1630px);
 
     .block-main {
-      margin-top: -10px;
-      @include size(580px, 1365px);
+      @include size(300px, 1560px);
+      padding: 40px 10px 0px 10px;
+
+      .main-article {
+        background-color: #f1cdb3;
+        //margin: 0px auto;
+        h3 {
+          width: 300px;
+          height: 64px;
+          font-family: Georgia;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 130%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.06em;
+          color: #545454;
+        }
+      }
 
       .card-pets {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: -20px;
 
-        .card-pet-3,
-        .card-pet-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 15px 0px 15px;
+        margin-top: -11px;
+
+        .card-pet-3 {
           margin-top: -11px;
         }
 
+        .card-pet-5 {
+          margin-top: 42px;
+        }
+
+        .card-pet-2,
+        .card-pet-4,
+        .card-pet-6,
         .card-pet-7,
         .card-pet-8 {
           display: none;
         }
       }
 
-      .card-pets-list2 {
-        margin-top: -30px;
-      }
-
       .block-arrows {
         .arrowsBtn {
-          margin: 40px auto;
+          display: grid;
+          grid-gap: 10px;
+          margin-top: 30px;
         }
       }
     }
+
   }
   .footer {
-    @include size(768px, 639px);
-    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-768.png");
+    @include size(320px, 943px);
+    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-320px.png");
 
     .block-footer {
-      @include size(708px, 609px);
-      dispay: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 120px;
+      display: grid;
+      grid-template-columns: 1fr;
 
       .footer-info-left {
-        margin-left: 25px;
-        margin-top: -26px;
+        margin-top: -25px;
+
+        .card-main,
+        .card-phone {
+          margin-left: -20px;
+        }
       }
       .footer-info-center {
-        margin-left: -255px;
-        margin-top: -25px;
+        margin-top: -177px;
         .card-pin-1 {
-          padding-top: -4px;
-
+          margin-left: -20px;
           h4 {
-            padding-left: 19px;
-            margin-top: 25px;
+            width: 260px;
+            height: 48px;
+            font-family: Georgia;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 115%;
           }
+        }
+        .card-pin-2 {
+          //margin-top: 2px;
+          margin-left: -20px;
         }
       }
       .footer-info-right {
-        margin-top: -100px;
-        padding-left: 195px;
-        @include size (300px,315px);
-
+        margin-top: -110px;
+        margin-left: -30px;
       }
     }
-
-  }
-
-}
-
-
-//320
-@media screen and (max-width: 320px) {
-  h1 {
-    background-color: #292929;
-  }
-  .header {
-
-  }
-  .main {
-
-  }
-  .footer {
-
   }
 }

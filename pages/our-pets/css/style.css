@@ -66,6 +66,9 @@
   line-height: 160%;
   color: #545454;
 }
+.header .block-header .header-navbar-logo {
+  display: none;
+}
 
 .main {
   width: 1280px;
@@ -252,88 +255,125 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    width: 768px;
+    width: 320px;
     height: 120px;
-    background-color: blueviolet;
   }
   .header .block-header {
-    width: 708px;
+    width: 300px;
     height: 60px;
-    margin-left: 30px;
+    padding-top: 30px;
+    margin-left: 10px;
+    display: flex;
   }
-  .header .block-header .header-logo p {
-    padding-top: 1px;
+  .header .block-header .header-navbar {
+    display: none;
+  }
+  .header .block-header .header-navbar-logo {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 22px;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  .header .block-header .header-navbar-logo .line-1,
+.header .block-header .header-navbar-logo .line-2,
+.header .block-header .header-navbar-logo .line-3 {
+    border-bottom: 2px solid #000000;
+  }
+  .header .block-header .header-navbar-logo .line-2,
+.header .block-header .header-navbar-logo .line-3 {
+    padding-top: 8px;
   }
 
   .main {
-    width: 768px;
-    height: 1733px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 320px;
+    height: 1630px;
   }
   .main .block-main {
-    margin-top: -10px;
-    width: 580px;
-    height: 1365px;
+    width: 300px;
+    height: 1560px;
+    padding: 40px 10px 0px 10px;
+  }
+  .main .block-main .main-article {
+    background-color: #f1cdb3;
+  }
+  .main .block-main .main-article h3 {
+    width: 300px;
+    height: 64px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
   }
   .main .block-main .card-pets {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: -20px;
-  }
-  .main .block-main .card-pets .card-pet-3,
-.main .block-main .card-pets .card-pet-4 {
+    grid-template-columns: 1fr;
+    padding: 0px 15px 0px 15px;
     margin-top: -11px;
   }
-  .main .block-main .card-pets .card-pet-7,
+  .main .block-main .card-pets .card-pet-3 {
+    margin-top: -11px;
+  }
+  .main .block-main .card-pets .card-pet-5 {
+    margin-top: 42px;
+  }
+  .main .block-main .card-pets .card-pet-2,
+.main .block-main .card-pets .card-pet-4,
+.main .block-main .card-pets .card-pet-6,
+.main .block-main .card-pets .card-pet-7,
 .main .block-main .card-pets .card-pet-8 {
     display: none;
   }
-  .main .block-main .card-pets-list2 {
-    margin-top: -30px;
-  }
   .main .block-main .block-arrows .arrowsBtn {
-    margin: 40px auto;
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 30px;
   }
 
   .footer {
-    width: 768px;
-    height: 639px;
-    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-768.png");
+    width: 320px;
+    height: 943px;
+    background-image: url("./../../../assets/img/our-pets-1280/footer-gradient-background-320px.png");
   }
   .footer .block-footer {
-    width: 708px;
-    height: 609px;
-    dispay: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 120px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .footer .block-footer .footer-info-left {
-    margin-left: 25px;
-    margin-top: -26px;
-  }
-  .footer .block-footer .footer-info-center {
-    margin-left: -255px;
     margin-top: -25px;
   }
+  .footer .block-footer .footer-info-left .card-main,
+.footer .block-footer .footer-info-left .card-phone {
+    margin-left: -20px;
+  }
+  .footer .block-footer .footer-info-center {
+    margin-top: -177px;
+  }
   .footer .block-footer .footer-info-center .card-pin-1 {
-    padding-top: -4px;
+    margin-left: -20px;
   }
   .footer .block-footer .footer-info-center .card-pin-1 h4 {
-    padding-left: 19px;
-    margin-top: 25px;
+    width: 260px;
+    height: 48px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 115%;
+  }
+  .footer .block-footer .footer-info-center .card-pin-2 {
+    margin-left: -20px;
   }
   .footer .block-footer .footer-info-right {
-    margin-top: -100px;
-    padding-left: 195px;
-    width: 300px;
-    height: 315px;
-  }
-}
-@media screen and (max-width: 320px) {
-  h1 {
-    background-color: #292929;
+    margin-top: -110px;
+    margin-left: -30px;
   }
 }
 
